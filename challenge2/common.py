@@ -8,6 +8,7 @@ def loadJsonFile (filePath):
     if os.path.exists(filePath) :
         with open(filePath, 'r') as json_data:
             loadedJSON = json.load(json_data)
+            json_data.close()
             return loadedJSON
     return None
 
@@ -15,9 +16,11 @@ def loadJsonFile (filePath):
 def saveJsonFile(filePath, jsonObj):
     with open(filePath, 'w', encoding='utf-8') as f:
         json.dump(jsonObj, f, indent=4)
+        f.close()
     
     with open(filePath[0:-5]+"_pretty.txt", 'w') as f_pretty:
         writeSchema(jsonObj, f_pretty)
+        f_pretty.close()
 
 # To check if the field is Non repeated no record field
 def isSimpleField(field):

@@ -1,5 +1,6 @@
 import json
 import common
+import generate_sql
 import general
 
 # to save order object
@@ -15,7 +16,7 @@ def CreateNewOrderSchema():
 
     order = {
                 'type' : "TABLE",
-                'tableId' : "Order",
+                'tableId' : "order",
                 'schema': {
                 }
             }

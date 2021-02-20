@@ -1,4 +1,5 @@
 import common
+import os
 
 # save the schema objec in json format using the given name
 def saveGenericObj (name, schema):
@@ -52,4 +53,5 @@ def processGenericObj (schema) :
         processGenericObj(newSchema)
         # save schema
         saveGenericObj(name, newSchema)
+
     return
