@@ -19,9 +19,12 @@ Reads csv data from https://footystats.org/
 Sends data in chunks to pipedream API
 Finally saves the data in provided sql database
 
-How to run: execute football.py file with python
+How to run: Execute football.py file with python
+
 Input: SQL connection details (host, user, password, dbname)
+
 Output:
+
 Send json objects via post requests to pipedeam API in chunk of 20s
 Save records in database tables using SQLs
 
@@ -33,11 +36,15 @@ Generates multiple schema json files in output folder
 Generates SQLs to create DB and tables using generated schema
 Also generates SQLs to insert data for manual use (can further be automated)
 
-How to run: execute main.py file with python
+How to run: Execute main.py file with python
+
 Input:
+
 File path to shopify's order schema (.json)
 SQL connection details (host, user, password, dbname)
+
 Output:
+
 Generating new table schemas after flattening the original json schema.
 Generating SQL queries
 Executing create database queries
@@ -50,5 +57,5 @@ Pending todos that can be implemented for improving this project:
 1. Write unit tests
 2. Write try catch sections
 3. Write async calls if possible
-4, Write store procedures for queries
+4. Write store procedures for queries
 
