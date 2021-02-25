@@ -58,4 +58,5 @@ Pending todos that can be implemented for improving this project:
 2. Write try catch sections
 3. Write async calls if possible
 4. Write store procedures for queries
+5. Write debug logs
 
